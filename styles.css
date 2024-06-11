@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'Gunterz';
+  src: url(./fonts/Lutschine-ExtraBoldx1.otf);
+}
+
+@font-face {
+  font-family: 'Cabinet Grotesk';
+  src: url(./fonts/CabinetGrotesk-Regular.woff2)
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+.main-container {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.name h1{
+  font-size: 200px;
+  font-family: 'Gunterz';
+  letter-spacing: 0;
+  line-height: 150%;
+  font-weight: 900;
+  text-shadow: 0 0 12px black;
+  
+}
+
+.text-wrapper {
+  position: relative;
+}
+
+.text-wrapper p{
+  font-size: 30px;
+  font-family: 'Cabinet Grotesk';
+  line-height: 0;
+  color: rgb(21, 31, 0);
+  }
+  
+  span {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.line-1 {
+  width: 400px;
+  border: solid 1px rgb(94, 94, 94);
+  margin-bottom: 40px;
+  opacity: 0;
+}
+
+.line-2 {
+  width: 400px;
+  border: solid 1px rgb(94, 94, 94);
+  margin-top: 40px;
+  opacity: 0;
+}
+
+
+.my-img {
+  width: 180px;
+  height: 200px;
+  background-color: rgb(251, 255, 196);
+  border: solid 2px rgb(0, 0, 0);  
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 3px 3px 5px rgb(0, 0, 0);
+  object-fit: cover;
+}
+
+.icon {
+  width: 100%;
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon i {
+  font-size: 50px;
+  opacity: 0;
+  cursor: pointer;
+  color: rgb(48, 48, 48);
+}
